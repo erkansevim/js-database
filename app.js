@@ -18,3 +18,13 @@ const delayed=setInterval(() => {
 
 //---------------------
 
+const person={name:"erkan", surname:"sevim"}
+
+new Promise ((resolve, reject)=>{
+    if (true) {
+        resolve(person)
+    }
+    else{
+        reject(new Error("promise unsuccesfull"))
+    }
+}).then((response)=>console.log(response)).catch((error)=>console.log(error))
